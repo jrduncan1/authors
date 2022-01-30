@@ -41,7 +41,6 @@ const Update = (props) => {
 
     return (
         <div>
-            <Link to="/"><button class="btn btn-warning mb-5">Home</button></Link>
             <form onSubmit={updateAuthor} class="form-control">
             {errors.map((err, index) => <p style={{color: "red"}}key={index}>{err}</p>)}
                 <h5>Edit Author:</h5>
@@ -53,6 +52,7 @@ const Update = (props) => {
                 </div>
                 <button className="btn btn-primary mt-3">Submit!</button>
             </form>
+            <Link to="/"><button class="btn btn-secondary mt-5">Cancel</button></Link>
         </div>
     )
 }

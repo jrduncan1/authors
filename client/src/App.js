@@ -27,7 +27,7 @@ function App() {
 
 
         {/* HOME & VIEW ALL */}
-        <Route path="/authors">
+        <Route exact path="/authors">
           <Main />
         </Route>
         

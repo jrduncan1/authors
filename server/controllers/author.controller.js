@@ -34,7 +34,7 @@ module.exports = {
             .then((revisedAuthor) => {
                 res.json(revisedAuthor)
             })
-            .catch(err => res.json({error: err}))
+            .catch(err => res.status(400).json({error: err}))
     },
 
     // == DELETE ==
